@@ -236,6 +236,45 @@ article div img:hover{
   margin-bottom: 20px;
   margin-top: 40px;
 }
+.card .btn{
+  padding: 10px 20px;
+  background-color: #f8c9d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ccc
+}
+  button.btn{
+  padding: 10px 20px;
+  background-color: #f8c9d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #ccc
+}
+
+
+.card .btn:hover {
+  background-color:#f8758b; 
+}
+
+button.btn-outline-light {
+  
+  color: white; 
+  
+}
+
+button.btn-outline-light:hover {
+  background-color: #f8758b; 
+  color: #ffffff; 
+}
+
+
 /*Estilos index.html*/ 
 
 
