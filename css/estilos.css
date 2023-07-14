@@ -60,6 +60,9 @@ nav ul li a {
   
   transition: transform 0.3s ease;
 }
+.navbar.navbar-expand-sm{
+  display: none;
+}
 
 nav ul li:hover {
   transform: scale(1.2);
@@ -74,10 +77,17 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
   }
+  .navbar{
+    display: flex;
+  }
+  .navbar.navbar-expand-sm{
+    display: block;
+  }
 
   #logo {
     margin-bottom: 10px;
     padding: 10px;
+    align-items: center;
   }
 
   nav ul {
@@ -90,9 +100,10 @@ nav ul li:hover {
   nav ul li {
     margin-left: 0;
     margin-bottom: 10px;
-   
   }
+  
 }
+
 /*HEADER*/
 
 /*FOOTER*/
@@ -139,7 +150,43 @@ footer div a img:hover{
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
 
+  nav ul{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    
+  }
+  .nav-item{
+    margin-left: 0px;
+    padding: 1px;
+    font-size: 40px;
+    margin-top: 0px;
+    margin: 0;
+  }
+
+  .navbar-nav a{
+    margin-left: 0px;
+    padding: 1px;
+    font-size: 40px;
+    margin-top: 0px;
+    box-shadow: none;
+    margin: 0;
+    background-color: #f8c9d1;
+  }
+  .navbar-brand{
+    color: white;
+    font-family: "gaga";
+    font-weight: bold;
+  }
+  .navbar-toggler-icon{
+    color: white;
+    background-color: white;
+  }
+
+}
 
 @media screen and (max-width: 1400px) {
   .row {
@@ -189,6 +236,15 @@ article div img:hover{
   height: 100px;
   object-fit: cover;
 }
+.cursostitulo{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
 /*ESTILOS CURSOS.HTML*/
 
 
@@ -207,6 +263,12 @@ article div img:hover{
   object-fit: cover;
   box-shadow: 0 0 20px 20px rgba(0, 0, 0, 1.5);
 }
+@media screen and (max-width:767px) {
+  .img-custom-height{
+    height: auto;
+  }
+}
+
 /*Estilos card y About*/
 
 .card{
@@ -355,7 +417,7 @@ button.btn-outline-light:hover {
   display: block;
   position: absolute;
   top: 10%;
-  right: 300px;
+  right: 10%;
   transform: translateY(-50%); 
   background: white;
   background-position: center;
@@ -388,45 +450,85 @@ button.btn-outline-light:hover {
   transform: translateY(-50%); 
   font-weight: bolder;
   box-shadow: 0 0 10px rgb(247, 190, 190);
+  right: 10%;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:513px){
   .galeria{
     grid-template-columns: repeat(auto-fit, minma(200px,1fr));
     }
+  .cerrar a{
+  display: block;
+    height: 15px;
+  width: 15px;
+  font-size: 5px;
+  padding: 0px;
+  margin: 0px;
+  }
   .cerrar{
-    display: flex;
-    position: absolute;
-    flex-wrap: wrap;
-            
-    transform: translateY(-50%); 
-    background: white;
-    background-position: center;
-    color: #f8c9d1;
-    text-decoration: none;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    line-height: 85px; 
-    border-radius: 50%;
-    font-size: 30px;
-    font-family: "gaga";
-    font-weight: bolder;
-    box-shadow: 0 0 10px rgb(249, 201, 201);
-    }
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    right: 10%;
+    line-height: 25px;
+  }
+  .sig a{
+    display: block;
+    height: 15px;
+  width: 15px;
+  font-size: 5px;
+  padding: 0px;
+  margin: 0px;
+  }
   .sig{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 5px;
-    line-height: 10px; 
-    height: 24px;
-    width: 24px;
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    right: 10%;
+    line-height: 25px;
+    padding: 0px;
+    margin: 5%;
+    
+    
 }
 .efecto-light{
   flex-wrap: wrap;
   display: flex;
 }
 }
-
+@media screen and (max-width:867px){
+  .cerrar a{
+    display: block;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    }
+    .cerrar{
+      font-size: 40px;
+      height: 45px;
+      width: 45px;
+      right: 10%;
+      line-height: 45px;
+    }
+    .sig a{
+      display: block;
+      height: 15px;
+    width: 15px;
+    font-size: 5px;
+    padding: 0px;
+    margin: 0px;
+    }
+    .sig{
+      font-size: 40px;
+      height: 45px;
+      width: 45px;
+      right: 10%;
+      line-height: 45px;
+      margin: 5%;
+      
+  }
+}
 /*ESTILOS CONTACTOS HTML*/
 
 .contact-section {
