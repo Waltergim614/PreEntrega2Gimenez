@@ -621,4 +621,14 @@ main{
 }
  
 }
+/*ESTILOS PRODUCTOS HTML*/
+.tituloproductos{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
   
