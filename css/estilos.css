@@ -216,6 +216,7 @@ article div img{
   border: 2px solid #ddd;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
+  object-fit: cover;
 }
 article div img:hover{
   transform: scale(1.1);
@@ -228,14 +229,7 @@ article div img:hover{
 .col-9:hover{
   transform: scale(1.1);
   }
-.divisor{
-  display: flex;
-}
-.divisor img{
-  width: 1000px;
-  height: 100px;
-  object-fit: cover;
-}
+
 .cursostitulo{
   text-align: center;
   padding: 20px 0;
