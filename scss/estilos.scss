@@ -1,0 +1,42 @@
+
+
+@mixin titulo-general {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 70px;
+    color: map-get($colors, color-secundario);
+    font-family: "gaga2";
+    font-weight: lighter;
+    font-style: initial;
+}
+
+@mixin tamanios($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+
+@font-face{
+    font-family: "gaga";
+    src: url(../fonts/gaga-nails-heebo-light.ttf);
+}
+
+@font-face{
+    font-family: "gaga2";
+    src: url(../fonts/gaga-nails-oleo-script-regular.ttf);
+}
+
+
+
+@import "vars&maps";
+@import "header";
+@import "footer";
+@import "cursos";
+@import "index";
+@import "cards&button";
+@import "galeria";
+@import "contactos";
+@import "mediaqueris";
+@import "titulos";
+@import "altermodo";
+

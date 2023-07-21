@@ -1,0 +1,62 @@
+    /*HEADER*/
+header {
+    background-color: map-get($colors, color-primario);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+
+        li {
+        margin-left: 15px;
+        padding: 5px;
+        transition: transform 0.3s ease;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: map-get($colors, texto-claro); 
+            font-family: "gaga";
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+}
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    img {
+        width: 250px;
+        transition: transform 0.3s ease;
+    }
+    &:hover img{
+        transform: scale(1.1);
+    } 
+}
+
+
+.navbar.navbar-expand-sm{
+    display: none;
+}

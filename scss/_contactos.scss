@@ -1,0 +1,92 @@
+
+/*ESTILOS CONTACTOS HTML*/
+
+.contact-section {
+    min-height: auto;
+    font-family: "gaga";
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+            li{
+    list-style: none;
+        }
+    }
+
+    .contact-section .container {
+        text-align: center;
+        align-items: center;
+    }
+    .ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+        h3{
+    font-family: "gaga";
+    padding: 10px;
+    }
+        iframe{
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);          
+        }
+    }
+
+    main{
+    background-color: rgba(254, 221, 225, 0.5);
+    
+}
+
+  /* Estilos para el formulario de agendamiento de turnos */
+    .contact-form form:nth-child(2) {
+    
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center
+    }
+
+    .contact-form form:nth-child(2) label {
+    font-weight: bold;
+    }
+
+    .contact-form form:nth-child(2) input[type="text"],
+    .contact-form form:nth-child(2) input[type="email"],
+    .contact-form form:nth-child(2) input[type="date"] {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+    .contact-form form:nth-child(2) button {
+    padding: 10px 20px;
+    background-color: map-get($colors, color-primario);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    .contact-form textarea{
+    
+    height: 100px;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    @media screen and (max-width:800px){
+    .contact-form form:nth-child(2) input[type="text"],
+    .contact-form form:nth-child(2) input[type="email"],
+    .contact-form form:nth-child(2) input[type="date"]{
+    width: auto;
+    }
+    .contact-form textarea{
+    width: auto;
+    }
+    }
+
+    /*ESTILOS CONTACTOS HTML*/

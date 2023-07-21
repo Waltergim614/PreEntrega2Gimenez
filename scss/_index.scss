@@ -1,0 +1,39 @@
+
+/*ABOUT US*/
+.about-us {
+    padding: 40px 0;
+    background-color: map-get($colors, texto-claro); 
+    margin-left: 5px;
+    h2 {
+    text-align: justify;
+    font-family: "gaga";
+    font-weight: bold;
+    color: black;   
+    }
+    p {
+    margin-bottom: 20px;
+    font-family: "gaga";
+    font-weight: bold;
+    color: black;
+    }
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+    }
+
+    /*ALTO DEL CARROUSER*/
+
+    .img-custom-height{
+        height: 700px;
+        object-fit: cover;
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 1.5);
+    }
+
+    /* TEXTO DENTRO DEL CAROUSEL*/
+    .blanco{
+        color: map-get($colors, texto-claro); 
+        font-size: 30px;
+        text-shadow: 0 0 3px black;
+    
+    }

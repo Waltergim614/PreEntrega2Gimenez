@@ -1,0 +1,58 @@
+
+    /*Estilos cards y buttons*/
+
+    .card{
+        padding: 20px;
+        align-items: center;
+        transition: transform 0.3s ease;
+        }
+        .card:hover{
+        transform: scale(1.1);
+        }
+        
+    
+    
+        .card {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        }
+        .card .btn{
+        padding: 10px 20px;
+        background-color: map-get($colors, color-primario);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid #ccc
+        }
+        button.btn{
+        padding: 10px 20px;
+        background-color: map-get($colors, color-primario);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid #ccc
+        }
+        button.btn.btn-primary:hover{
+            background-color: $hoverbutton;
+        }
+    
+    
+    .card .btn:hover {
+        background-color: $hoverbutton; 
+    }
+    
+    button.btn-outline-light {
+        
+        color: map-get($colors, texto-claro); 
+        
+    }
+    
+    button.btn-outline-light:hover {
+        background-color: $hoverbutton; 
+        color: #ffffff; 
+    }

@@ -1,0 +1,123 @@
+
+    /* HEADER*/
+
+    @media screen and (max-width: 768px) {
+        header {
+            height: auto;
+            padding: 0px;
+            flex-direction: row;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar{
+            display: flex;
+        }
+        .navbar.navbar-expand-sm{
+            display: block;
+        }
+        }
+    
+    
+        /* HEADER*/
+
+        /*ALTO CARROUSEL*/
+
+        @media screen and (max-width:767px) {
+            .img-custom-height{
+            height: auto;
+            }
+            }
+        
+        /*ALTO CARROUSEL*/
+
+        /*CURSOS*/
+
+    @media screen and (max-width: 767px) {
+
+        header nav ul{
+            display: none;
+        }
+        .navbar{
+            display: flex;
+        
+        }
+        .nav-item{
+        margin-left: 0px;
+        padding: 1px;
+        font-size: 40px;
+        margin-top: 0px;
+        margin: 0;
+        }
+    
+        .navbar-nav a{
+        margin-left: 0px;
+        padding: 1px;
+        font-size: 40px;
+        margin-top: 0px;
+        box-shadow: none;
+        margin: 0;
+        background-color: map-get($colors, color-primario);
+        }
+        .navbar-brand{
+        color: map-get($colors, texto-claro); 
+        font-family: "gaga";
+        font-weight: bold;
+        }
+        .navbar-toggler-icon{
+        color: map-get($colors, texto-claro); 
+        
+        }
+    
+    }
+    
+        @media screen and (max-width: 1400px) {
+        .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: auto;
+        justify-content: center;
+        }
+    
+        .col-3, .col-9 {
+        width: 100%;
+        text-align: center;
+        }
+        }
+    
+    /*CURSOS/*
+
+    /*GALERIA*/
+
+    @media screen and (max-width:867px){
+        .cerrar a{
+        display: block;
+        @include tamanios(35px, 35px);
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        }
+        .cerrar{
+            font-size: 40px;
+            @include tamanios(45px, 45px);
+            right: 10%;
+            line-height: 45px;
+        }
+        .sig a{
+            display: block;
+            height: 15px;
+        width: 15px;
+        font-size: 5px;
+        padding: 0px;
+        margin: 0px;
+        }
+        .sig{
+            font-size: 40px;
+            @include tamanios(45px, 45px);
+            right: 10%;
+            line-height: 45px;
+            margin: 5%;
+            
+        }
+    }
+    /*GALERIA*/

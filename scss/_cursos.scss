@@ -1,0 +1,57 @@
+
+/*ESTILOS CURSOS.HTML*/
+.navbar-nav {
+    font-family: "gaga";
+    font-size: 40px;
+
+    a{
+        color: map-get($colors, texto-claro); 
+        text-decoration: none;
+        background-color: map-get($colors, color-secundario);
+        padding: 0px;
+        margin: 5px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        filter: blur(0.1px);
+    }
+    
+    &:last-child a{
+        margin-right: 0;
+    }
+}
+
+article div{
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    h3{
+    font-family: "gaga";
+    color: grey;
+}
+    img{
+    border: 2px solid #ddd;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    &:hover{
+        transform: scale(1.1);
+    } 
+
+    }
+    }
+
+
+
+.col-9 {
+    border: 2px solid #ddd;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    align-items: center;
+    
+}
+
+.col-9:hover{
+    transform: scale(1.1);
+    }
+
+
+/*ESTILOS CURSOS.HTML*/

@@ -1,0 +1,27 @@
+/*FOOTER*/
+footer {
+    background-color: map-get($colors, color-primario);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include tamanios(100px, 100%);
+    padding: 0 20px;
+    
+
+    div {
+        a {
+        img {
+            transition: transform 0.3s ease;
+            &:hover {
+            transform: scale(1.2);
+            }
+        }
+    }
+    }
+}
+
+.redes{
+    padding: 10px;
+    margin-right: 20px;
+}
+/*-------------------------------------------------------------------------FOOTER-----------------------------------------------------------*/
