@@ -6,7 +6,9 @@ footer {
     align-items: center;
     @include tamanios(100px, 100%);
     padding: 0 20px;
-    
+    &.dark{
+        background-color: map-get($colors, color-dark-primario);
+    }
 
     div {
         a {

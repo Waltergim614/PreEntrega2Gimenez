@@ -19,6 +19,9 @@ header {
   padding: 10px 20px;
   width: 100%;
 }
+header.dark {
+  background-color: rgb(77, 74, 74);
+}
 header nav ul {
   list-style: none;
   display: flex;
@@ -75,6 +78,9 @@ footer {
   height: 100px;
   width: 100%;
   padding: 0 20px;
+}
+footer.dark {
+  background-color: rgb(77, 74, 74);
 }
 footer div a img {
   transition: transform 0.3s ease;
@@ -229,6 +235,50 @@ button.btn-outline-light {
 button.btn-outline-light:hover {
   background-color: #f8758b;
   color: #ffffff;
+}
+
+/*BOTON DE MODO OSCURO*/
+.switch {
+  background: rgb(204, 204, 204);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  transition: background-color 1s ease, color 1s ease;
+}
+.switch::after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 1s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: #f8c9d1;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+  transition: color 1s ease;
+}
+.switch span {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: white;
+  transition: color 1s ease;
 }
 
 /*ESTILOS GALERIA*/
@@ -418,9 +468,14 @@ main {
     width: auto;
   }
 }
+.text-contacto {
+  color: rgb(99, 99, 99);
+  font-family: "gaga";
+}
+
 /*ESTILOS CONTACTOS HTML*/
 /* HEADER*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header {
     height: auto;
     padding: 0px;
@@ -578,9 +633,11 @@ main {
 }
 
 /*CONTACTO*/
-main {
-  background-color: rgba(254, 221, 225, 0.5);
-  color: #000000;
+main .text-contacto.dark {
+  color: white;
+}
+main.dark {
+  background-color: black;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,5 +1,5 @@
     /*HEADER*/
-header {
+    header {
     background-color: map-get($colors, color-primario);
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,10 @@ header {
     align-items: center;
     padding: 10px 20px;
     width: 100%;
-
+    &.dark{
+        background-color: map-get($colors, color-dark-primario);
+    }
+    
     nav ul {
     list-style: none;
     display: flex;

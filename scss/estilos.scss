@@ -28,6 +28,7 @@
 
 
 
+
 @import "vars&maps";
 @import "header";
 @import "footer";
@@ -39,4 +40,17 @@
 @import "mediaqueris";
 @import "titulos";
 @import "altermodo";
+
+main{
+    .text-contacto{
+        &.dark{
+            color:  white;
+        } 
+    }
+
+    &.dark{
+        background-color: black;
+    }
+    
+}
 
