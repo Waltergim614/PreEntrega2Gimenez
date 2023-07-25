@@ -261,6 +261,10 @@ article div img:hover {
   font-weight: bold;
 }
 
+.fa-star {
+  color: gold;
+}
+
 /*Estilos cards y buttons*/
 .card {
   padding: 20px;
@@ -551,6 +555,16 @@ main {
 .text-contacto {
   color: rgb(99, 99, 99);
   font-family: "gaga";
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ubicacion-title {
+  margin-bottom: 20px; /* Espacio entre el h2 y el iframe */
 }
 
 /*ESTILOS CONTACTOS HTML*/
