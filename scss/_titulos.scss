@@ -23,6 +23,13 @@
         font-style: initial;
     }
     .h2subtitulo{
-        @include titulo-general;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 80px;
+        color: map-get($colors, color-secundario);
+        font-family: "gaga2";
+        font-weight: lighter;
+        font-style: initial;
     }
+
     /*CONTACTO*/

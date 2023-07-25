@@ -92,10 +92,12 @@ footer.dark {
 }
 
 .infFooter {
+  display: flex;
   font-family: "gaga";
   font-size: 15px;
   color: grey;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .copyright {
@@ -207,6 +209,17 @@ article div img:hover {
 
 .ab-hor {
   padding-bottom: 60px;
+  margin-top: 60px;
+}
+.ab-hor h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 60px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+  padding-bottom: 50px;
 }
 
 /*ALTO DEL CARROUSER*/
@@ -224,6 +237,16 @@ article div img:hover {
 }
 
 /*SERVICIOS*/
+.titulo-nuestros-servicios {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+
 .servicios {
   margin-top: 60px;
   font-family: "gaga";
@@ -251,7 +274,7 @@ article div img:hover {
 .testimonios h2 {
   text-align: center;
   padding: 20px 0;
-  font-size: 70px;
+  font-size: 60px;
   color: #f5c1c7;
   font-family: "gaga2";
   font-weight: lighter;
@@ -761,7 +784,7 @@ main {
 .h2subtitulo {
   text-align: center;
   padding: 20px 0;
-  font-size: 70px;
+  font-size: 80px;
   color: #f5c1c7;
   font-family: "gaga2";
   font-weight: lighter;

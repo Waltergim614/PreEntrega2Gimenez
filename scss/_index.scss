@@ -23,6 +23,17 @@
     }
     .ab-hor{
         padding-bottom: 60px;
+        margin-top: 60px;
+        h2{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 60px;
+            color: map-get($colors, color-secundario);
+            font-family: "gaga2";
+            font-weight: lighter;
+            font-style: initial;
+            padding-bottom: 50px;
+        }
     }
 
     /*ALTO DEL CARROUSER*/
@@ -42,6 +53,9 @@
     }
 
     /*SERVICIOS*/
+    .titulo-nuestros-servicios{
+        @include titulo-general;
+    }
     .servicios{
         margin-top: 60px;
         font-family: "gaga";
@@ -60,7 +74,13 @@
         font-family: "gaga";
         margin-bottom: 60px;
         h2{
-            @include titulo-general;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 60px;
+            color: map-get($colors, color-secundario);
+            font-family: "gaga2";
+            font-weight: lighter;
+            font-style: initial;
         }
         h3{
             font-weight: bold;

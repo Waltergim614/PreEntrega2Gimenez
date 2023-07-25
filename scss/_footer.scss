@@ -14,10 +14,13 @@ footer {
 
 
 .infFooter {
+    display: flex;
     font-family: "gaga";
     font-size: 15px;
     color: grey;
     font-weight: bold;
+    flex-wrap: wrap;
+    
 }
 
 
