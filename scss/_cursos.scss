@@ -2,23 +2,37 @@
 /*ESTILOS CURSOS.HTML*/
 .navbar-nav {
     font-family: "gaga";
-    font-size: 40px;
+    font-size: auto;
 
     a{
         color: map-get($colors, texto-claro); 
         text-decoration: none;
-        background-color: map-get($colors, color-secundario);
+        background-color: none;
         padding: 0px;
         margin: 5px;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-        filter: blur(0.1px);
+        
     }
     
-    &:last-child a{
-        margin-right: 0;
-    }
+    
 }
-
+.navcur {
+    font-family: "gaga";
+    font-size: 40px;
+    background-color: map-get($colors, color-primario);
+    width: auto;
+    align-items: center;
+    box-shadow: 0 0 6px rgb(236, 101, 153);
+    a{
+        color: map-get($colors, texto-claro); 
+        text-decoration: none;
+        width: auto;
+        text-align: center;
+        
+        
+    }
+    
+}
 article div{
     justify-content: center;
     align-items: center;

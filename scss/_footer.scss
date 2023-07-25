@@ -1,29 +1,50 @@
 /*FOOTER*/
 footer {
     background-color: map-get($colors, color-primario);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    padding: 5px;
+    @include tamanios(100%, 100%);
+
+    &.dark {
+        background-color: map-get($colors, color-dark-primario);
+    }
+}
+
+
+.infFooter {
+    font-family: "gaga";
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+
+.copyright {
+    text-align: center;
+    font-family: "gaga";
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+
+.redes {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @include tamanios(100px, 100%);
-    padding: 0 20px;
-    &.dark{
-        background-color: map-get($colors, color-dark-primario);
-    }
-
-    div {
-        a {
-        img {
-            transition: transform 0.3s ease;
-            &:hover {
-            transform: scale(1.2);
-            }
-        }
-    }
-    }
+    flex-wrap: wrap;
 }
 
-.redes{
-    padding: 10px;
-    margin-right: 20px;
+
+.redes img {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 /*-------------------------------------------------------------------------FOOTER-----------------------------------------------------------*/
+

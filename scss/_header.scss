@@ -11,6 +11,8 @@
         background-color: map-get($colors, color-dark-primario);
     }
     
+
+    
     nav ul {
     list-style: none;
     display: flex;
@@ -43,6 +45,15 @@
 }
 
 }
+main{
+    
+    &.dark{
+        background-color: black;
+    }
+    
+}
+
+
 
 #logo {
     display: flex;

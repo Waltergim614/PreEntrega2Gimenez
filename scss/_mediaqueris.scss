@@ -58,7 +58,7 @@
         margin-top: 0px;
         box-shadow: none;
         margin: 0;
-        background-color: map-get($colors, color-primario);
+        background-color: none;
         }
         .navbar-brand{
         color: map-get($colors, texto-claro); 
@@ -121,4 +121,44 @@
             
         }
     }
+    @media screen and (max-width:743px){
+        .cerrar a{
+        display: none;
+        @include tamanios(35px, 35px);
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        }
+        .cerrar{
+            font-size: 40px;
+            @include tamanios(45px, 45px);
+            right: 10%;
+            line-height: 45px;
+            display: none;
+        }
+        .sig a{
+            display: none;
+            height: 15px;
+        width: 15px;
+        font-size: 5px;
+        padding: 0px;
+        margin: 0px;
+        }
+        .sig{
+            font-size: 40px;
+            @include tamanios(45px, 45px);
+            right: 10%;
+            line-height: 45px;
+            margin: 5%;
+            display: none;
+            
+        }
+        .efecto-light{
+            display: none;
+    }
+    .galeria a:hover img{
+        filter: none;
+        transform: none;
+        }
+}
     /*GALERIA*/

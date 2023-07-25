@@ -37,3 +37,29 @@
         text-shadow: 0 0 3px black;
     
     }
+
+    /*SERVICIOS*/
+    .servicios{
+        margin-top: 60px;
+        font-family: "gaga";
+        h2{
+            @include titulo-general;
+        }
+        h3{
+            font-weight: bold;
+        }
+       
+    }
+
+    /*TESTIMONIOS*/
+    .testimonios{
+        margin-top: 60px;
+        padding-bottom: 60px;
+        font-family: "gaga";
+        h2{
+            @include titulo-general;
+        }
+        h3{
+            font-weight: bold;
+        }
+    }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "gaga";
   src: url(../fonts/gaga-nails-heebo-light.ttf);
@@ -8,7 +9,10 @@
 }
 /*VARIABLES*/
 /*VARIABLES*/
+/*MIXIN*/
+/*MIXIN*/
 /*MAPS*/
+/*MODO ALTERNATIVO (NAVIDEÑO, OFERTAS, INVIERNO, VERANO ETC) */
 /*HEADER*/
 header {
   background-color: #f8c9d1;
@@ -51,6 +55,10 @@ header nav ul li:hover {
   transform: scale(1.2);
 }
 
+main.dark {
+  background-color: black;
+}
+
 #logo {
   display: flex;
   align-items: center;
@@ -72,45 +80,75 @@ header nav ul li:hover {
 /*FOOTER*/
 footer {
   background-color: #f8c9d1;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  height: 100px;
+  padding: 5px;
+  height: 100%;
   width: 100%;
-  padding: 0 20px;
 }
 footer.dark {
   background-color: rgb(77, 74, 74);
 }
-footer div a img {
-  transition: transform 0.3s ease;
+
+.infFooter {
+  font-family: "gaga";
+  font-size: 15px;
+  color: grey;
+  font-weight: bold;
 }
-footer div a img:hover {
-  transform: scale(1.2);
+
+.copyright {
+  text-align: center;
+  font-family: "gaga";
+  font-size: 15px;
+  color: grey;
+  font-weight: bold;
 }
 
 .redes {
-  padding: 10px;
-  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.redes img {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+.redes img:hover {
+  transform: scale(1.2);
 }
 
 /*-------------------------------------------------------------------------FOOTER-----------------------------------------------------------*/
 /*ESTILOS CURSOS.HTML*/
 .navbar-nav {
   font-family: "gaga";
-  font-size: 40px;
+  font-size: auto;
 }
 .navbar-nav a {
   color: white;
   text-decoration: none;
-  background-color: #f5c1c7;
+  background-color: none;
   padding: 0px;
   margin: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  filter: blur(0.1px);
 }
-.navbar-nav:last-child a {
-  margin-right: 0;
+
+.navcur {
+  font-family: "gaga";
+  font-size: 40px;
+  background-color: #f8c9d1;
+  width: auto;
+  align-items: center;
+  box-shadow: 0 0 6px rgb(236, 101, 153);
+}
+.navcur a {
+  color: white;
+  text-decoration: none;
+  width: auto;
+  text-align: center;
 }
 
 article div {
@@ -179,6 +217,43 @@ article div img:hover {
   color: white;
   font-size: 30px;
   text-shadow: 0 0 3px black;
+}
+
+/*SERVICIOS*/
+.servicios {
+  margin-top: 60px;
+  font-family: "gaga";
+}
+.servicios h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+.servicios h3 {
+  font-weight: bold;
+}
+
+/*TESTIMONIOS*/
+.testimonios {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  font-family: "gaga";
+}
+.testimonios h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+.testimonios h3 {
+  font-weight: bold;
 }
 
 /*Estilos cards y buttons*/
@@ -521,7 +596,7 @@ main {
     margin-top: 0px;
     box-shadow: none;
     margin: 0;
-    background-color: #f8c9d1;
+    background-color: none;
   }
   .navbar-brand {
     color: white;
@@ -580,6 +655,48 @@ main {
     margin: 5%;
   }
 }
+@media screen and (max-width: 743px) {
+  .cerrar a {
+    display: none;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .cerrar {
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    right: 10%;
+    line-height: 45px;
+    display: none;
+  }
+  .sig a {
+    display: none;
+    height: 15px;
+    width: 15px;
+    font-size: 5px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .sig {
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    right: 10%;
+    line-height: 45px;
+    margin: 5%;
+    display: none;
+  }
+  .efecto-light {
+    display: none;
+  }
+  .galeria a:hover img {
+    filter: none;
+    transform: none;
+  }
+}
 /*GALERIA*/
 .tituloproductos {
   text-align: center;
@@ -633,11 +750,5 @@ main {
 }
 
 /*CONTACTO*/
-main .text-contacto.dark {
-  color: white;
-}
-main.dark {
-  background-color: black;
-}
 
 /*# sourceMappingURL=estilos.css.map */
