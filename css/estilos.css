@@ -205,6 +205,10 @@ article div img:hover {
   height: auto;
 }
 
+.ab-hor {
+  padding-bottom: 60px;
+}
+
 /*ALTO DEL CARROUSER*/
 .img-custom-height {
   height: 700px;
@@ -242,6 +246,7 @@ article div img:hover {
   margin-top: 60px;
   padding-bottom: 60px;
   font-family: "gaga";
+  margin-bottom: 60px;
 }
 .testimonios h2 {
   text-align: center;
