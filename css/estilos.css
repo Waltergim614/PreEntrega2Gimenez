@@ -30,10 +30,11 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 5px;
-  padding: 5px;
+  margin-top: 10px;
+  padding-top: 50px;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 0;
 }
 header nav ul li {
   margin-left: 15px;
@@ -86,18 +87,27 @@ footer {
   padding: 5px;
   height: 100%;
   width: 100%;
+  height: 100%;
 }
 footer.dark {
   background-color: rgb(77, 74, 74);
 }
 
 .infFooter {
-  display: flex;
+  display: grid;
   font-family: "gaga";
   font-size: 15px;
   color: grey;
   font-weight: bold;
-  flex-wrap: wrap;
+  padding-top: 10px;
+  padding: 5px;
+  margin: 0;
+}
+.infFooter p {
+  margin: 0%;
+  padding: 1%;
+  text-align: start;
+  overflow-wrap: break-word;
 }
 
 .copyright {
@@ -153,34 +163,39 @@ footer.dark {
   text-align: center;
 }
 
-article div {
+article {
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 20px;
 }
-article div h3 {
-  font-family: "gaga";
-  color: grey;
-}
-article div img {
+article .imgcurso img {
   border: 2px solid #ddd;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
   object-fit: cover;
 }
-article div img:hover {
+article .cursos {
+  padding-bottom: 10%;
+  padding-top: 10%;
+  transition: 0.5s ease;
+}
+article .cursos:hover {
   transform: scale(1.1);
 }
-
-.col-9 {
+article .infcurso {
+  display: flex;
   border: 2px solid #ddd;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  padding: 30px;
+  height: 250px;
+  text-align: center;
+  background-image: url(../img/glitter3.jpg);
   align-items: center;
 }
-
-.col-9:hover {
-  transform: scale(1.1);
+article .infcurso h3 {
+  font-family: "gaga";
+  color: grey;
+  text-align: justify;
+  margin: 0px;
 }
 
 /*ESTILOS CURSOS.HTML*/
@@ -190,7 +205,7 @@ article div img:hover {
   background-color: white;
   margin-left: 5px;
 }
-.about-us h2 {
+.about-us h3 {
   text-align: justify;
   font-family: "gaga";
   font-weight: bold;
@@ -239,12 +254,14 @@ article div img:hover {
 /*SERVICIOS*/
 .titulo-nuestros-servicios {
   text-align: center;
-  padding: 20px 0;
+  padding: 50px;
+  padding-top: 80px;
   font-size: 70px;
   color: #f5c1c7;
   font-family: "gaga2";
   font-weight: lighter;
   font-style: initial;
+  margin: 0px;
 }
 
 .servicios {
@@ -253,12 +270,14 @@ article div img:hover {
 }
 .servicios h2 {
   text-align: center;
-  padding: 20px 0;
+  padding: 50px;
+  padding-top: 80px;
   font-size: 70px;
   color: #f5c1c7;
   font-family: "gaga2";
   font-weight: lighter;
   font-style: initial;
+  margin: 0px;
 }
 .servicios h3 {
   font-weight: bold;
@@ -297,6 +316,7 @@ article div img:hover {
 
 .card:hover {
   transform: scale(1.1);
+  z-index: 1;
 }
 
 .card {
@@ -393,10 +413,13 @@ button.btn-outline-light:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 10px;
-  width: 95%;
-  margin: auto;
+  width: 100%;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 16%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
 }
 .galeria img {
   height: 450px;
@@ -405,7 +428,7 @@ button.btn-outline-light:hover {
   max-height: 100%;
   vertical-align: top;
   object-fit: cover;
-  transition: transform 0, 5s;
+  transition: 0.5s;
 }
 
 .galeria > a {
@@ -416,8 +439,8 @@ button.btn-outline-light:hover {
 }
 
 .galeria a:hover img {
-  filter: blur(1px);
-  transform: rotate(30deg) scale(1.3);
+  filter: blur(0.5px);
+  transform: rotate(20deg) scale(1.2);
 }
 
 .efecto-light {
@@ -488,114 +511,202 @@ button.btn-outline-light:hover {
 
 /*ESTILOS GALERIA*/
 /*ESTILOS CONTACTOS HTML*/
-.contact-section {
-  min-height: auto;
-  font-family: "gaga";
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-}
-.contact-section li {
-  list-style: none;
-}
-
-.contact-section .container {
-  text-align: center;
-  align-items: center;
-}
-
-.ubicacion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
-.ubicacion h3 {
-  font-family: "gaga";
-  padding: 10px;
-}
-.ubicacion iframe {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
 main {
   background-color: rgba(254, 221, 225, 0.5);
 }
 
-/* Estilos para el formulario de agendamiento de turnos */
-.contact-form form:nth-child(2) {
-  padding: 20px;
-  border-radius: 5px;
+.form-area {
+  padding-top: 2%;
+}
+
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+.left {
+  background: #f8c9d1;
+  padding: 10%;
+  padding-bottom: 20%;
+}
+.left h2 {
+  font-family: "gaga";
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
   text-align: center;
+  padding-bottom: 20%;
+}
+.left img {
+  object-fit: cover;
+  height: 250px;
+  width: auto;
 }
 
-.contact-form form:nth-child(2) label {
-  font-weight: bold;
+.right {
+  padding: 10%;
+  position: relative;
 }
-
-.contact-form form:nth-child(2) input[type=text],
-.contact-form form:nth-child(2) input[type=email],
-.contact-form form:nth-child(2) input[type=date] {
-  width: 600px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: white;
+}
+.right button {
+  width: 180px;
+  padding: 15px 0;
   display: inline-block;
-  vertical-align: middle;
-}
-
-.contact-form form:nth-child(2) button {
-  padding: 10px 20px;
-  background-color: #f8c9d1;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
-.contact-form textarea {
-  height: 100px;
-  width: 600px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  display: inline-block;
-  vertical-align: middle;
+.form-control {
+  border: 2px solid black;
 }
 
-@media screen and (max-width: 800px) {
-  .contact-form form:nth-child(2) input[type=text],
-  .contact-form form:nth-child(2) input[type=email],
-  .contact-form form:nth-child(2) input[type=date] {
-    width: auto;
+@media screen and (max-width: 1200px) {
+  .left {
+    padding-top: 25%;
   }
-  .contact-form textarea {
-    width: auto;
+  .left h2 {
+    padding-bottom: 20px;
+  }
+  .left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
-.text-contacto {
-  color: rgb(99, 99, 99);
-  font-family: "gaga";
-}
-
-.ubicacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ubicacion-title {
-  margin-bottom: 20px; /* Espacio entre el h2 y el iframe */
-}
-
 /*ESTILOS CONTACTOS HTML*/
-/* HEADER*/
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-card .location-info {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+.contact-card .location-info p {
+  font-family: "gaga";
+  color: black;
+}
+.contact-card .location-info h2 {
+  padding: 20px 0;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+.contact-card .map-container {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+.contact-card .map-container iframe {
+  width: 100%;
+  height: 300px;
+}
 @media screen and (max-width: 767px) {
+  .contact-card {
+    flex-direction: column;
+  }
+  .contact-card .location-info,
+  .contact-card .map-container {
+    flex: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.contac-section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.contac-section .ubicacion-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+
+.tituloproductos {
+  text-align: center;
+  padding: 50px;
+  padding-top: 80px;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+  margin: 0px;
+}
+
+.titulogaleria {
+  text-align: center;
+  padding: 50px;
+  padding-top: 80px;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+  margin: 0px;
+}
+
+.cursostitulo {
+  text-align: center;
+  padding: 50px;
+  padding-top: 80px;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+  margin: 0px;
+}
+
+/*CONTACTO*/
+.titulocontacto {
+  text-align: center;
+  padding: 50px;
+  padding-top: 80px;
+  font-size: 70px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+  margin: 0px;
+}
+
+.h2subtitulo {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 80px;
+  color: #f5c1c7;
+  font-family: "gaga2";
+  font-weight: lighter;
+  font-style: initial;
+}
+
+/*CONTACTO*/
+/* HEADER*/
+@media screen and (max-width: 933px) {
   header {
     height: auto;
-    padding: 0px;
+    padding: 2px;
     flex-direction: row;
     align-items: center;
     display: flex;
@@ -603,13 +714,20 @@ main {
   }
   .navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .navbar.navbar-expand-sm {
     display: block;
   }
 }
+#logo {
+  justify-content: center;
+  align-items: center;
+}
+
 /* HEADER*/
-/*ALTO CARROUSEL*/
+/*ALTO CARROUSEL IN*/
 @media screen and (max-width: 767px) {
   .img-custom-height {
     height: auto;
@@ -617,7 +735,7 @@ main {
 }
 /*ALTO CARROUSEL*/
 /*CURSOS*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 933px) {
   header nav ul {
     display: none;
   }
@@ -649,16 +767,34 @@ main {
     color: white;
   }
 }
-@media screen and (max-width: 1400px) {
-  .row {
+@media screen and (max-width: 1200px) {
+  article .cursos {
     flex-direction: column;
     flex-wrap: wrap;
-    padding: auto;
+    padding: 5px;
+    padding-bottom: 100px;
     justify-content: center;
   }
-  .col-3, .col-9 {
+  article .cursos:hover {
+    transform: scale(1);
+  }
+  .infcurso {
     width: 100%;
     text-align: center;
+    height: 100%;
+    justify-content: center;
+  }
+  .infcurso h3 {
+    font-size: large;
+  }
+  .imgcurso {
+    padding: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    justify-content: center;
   }
 }
 /*CURSOS/*
@@ -740,57 +876,5 @@ main {
   }
 }
 /*GALERIA*/
-.tituloproductos {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 70px;
-  color: #f5c1c7;
-  font-family: "gaga2";
-  font-weight: lighter;
-  font-style: initial;
-}
-
-.titulogaleria {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 70px;
-  color: #f5c1c7;
-  font-family: "gaga2";
-  font-weight: lighter;
-  font-style: initial;
-}
-
-.cursostitulo {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 70px;
-  color: #f5c1c7;
-  font-family: "gaga2";
-  font-weight: lighter;
-  font-style: initial;
-}
-
-/*CONTACTO*/
-.titulocontacto {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 80px;
-  color: #f5c1c7;
-  font-family: "gaga2";
-  font-weight: lighter;
-  font-style: initial;
-}
-
-.h2subtitulo {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 80px;
-  color: #f5c1c7;
-  font-family: "gaga2";
-  font-weight: lighter;
-  font-style: initial;
-}
-
-/*CONTACTO*/
 
 /*# sourceMappingURL=estilos.css.map */

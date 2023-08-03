@@ -1,10 +1,10 @@
 
     /* HEADER*/
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 933px) {
         header {
             height: auto;
-            padding: 0px;
+            padding: 2px;
             flex-direction: row;
             align-items: center;
             display: flex;
@@ -12,17 +12,23 @@
         }
         .navbar{
             display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .navbar.navbar-expand-sm{
             display: block;
         }
         
         }
+        #logo{
+            justify-content: center;
+            align-items: center;
+        }
     
     
         /* HEADER*/
 
-        /*ALTO CARROUSEL*/
+        /*ALTO CARROUSEL IN*/
 
         @media screen and (max-width:767px) {
             .img-custom-height{
@@ -34,7 +40,7 @@
 
         /*CURSOS*/
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 933px) {
 
         header nav ul{
             display: none;
@@ -72,18 +78,40 @@
     
     }
     
-        @media screen and (max-width: 1400px) {
-        .row {
+        @media screen and (max-width: 1200px) {
+        article .cursos {
         flex-direction: column;
         flex-wrap: wrap;
-        padding: auto;
+        padding: 5px;
+        padding-bottom: 100px;
         justify-content: center;
+        &:hover{
+            transform: scale(1.0);
         }
-    
-        .col-3, .col-9 {
+
+        }
+        
+        .infcurso {
         width: 100%;
         text-align: center;
+        height: 100%;
+        justify-content: center;
+        h3{
+            font-size: large;
         }
+        
+        }
+        .imgcurso{
+            padding: 0px;
+            padding-bottom:  10px;
+            margin-bottom: 20px;
+            width: 100%;
+        text-align: center;
+        height: auto;
+        justify-content: center;
+        
+        }
+        
         }
     
     /*CURSOS/*

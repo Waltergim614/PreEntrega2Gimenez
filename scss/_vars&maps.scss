@@ -9,12 +9,15 @@ $hoverbutton: #f8758b;
 /*MIXIN*/
 @mixin titulo-general {
     text-align: center;
-    padding: 20px 0;
+    padding: 50px;
+    padding-top: 80px;
     font-size: 70px;
     color: map-get($colors, color-secundario);
     font-family: "gaga2";
     font-weight: lighter;
     font-style: initial;
+    margin: 0px;
+
 }
 
 @mixin tamanios($alto, $ancho){

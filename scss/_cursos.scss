@@ -33,39 +33,48 @@
     }
     
 }
-article div{
+article {
     justify-content: center;
     align-items: center;
-    padding: 60px;
-    h3{
-    font-family: "gaga";
-    color: grey;
-}
-    img{
-    border: 2px solid #ddd;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-    object-fit: cover;
-    &:hover{
-        transform: scale(1.1);
-    } 
-
-    }
-    }
-
-
-
-.col-9 {
-    border: 2px solid #ddd;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-    align-items: center;
+    padding: 20px;
     
-}
-
-.col-9:hover{
-    transform: scale(1.1);
+    
+    .imgcurso{
+        img{
+            border: 2px solid #ddd;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+    
     }
+    
+    .cursos{
+        padding-bottom: 10%;
+        padding-top: 10%;
+        transition: 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        } 
+    
+    }
+    .infcurso {
+    display: flex;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    background-image: url(../img/glitter3.jpg);
+    align-items: center;
+        
+        h3{
+        font-family: "gaga";
+        color: grey;
+        text-align: justify;
+        margin: 0px;
+        }
 
+        }
+}
 
 /*ESTILOS CURSOS.HTML*/

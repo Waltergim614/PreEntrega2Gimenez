@@ -14,13 +14,7 @@
     
         /*CONTACTO*/
     .titulocontacto{
-        text-align: center;
-        padding: 20px 0;
-        font-size: 80px;
-        color: map-get($colors, color-secundario);
-        font-family: "gaga2";
-        font-weight: lighter;
-        font-style: initial;
+        @include titulo-general;
     }
     .h2subtitulo{
         text-align: center;
