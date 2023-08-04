@@ -1,18 +1,17 @@
 
-
+/*TITULO DE PRODUCTOS.HTML*/
 .tituloproductos{
         @include titulo-general;
     }
-
+/*TITULO DE GALERIA.HTML*/
     .titulogaleria{
         @include titulo-general;
         }
-    
+/*TITULO DE CURSOS.HTML*/   
     .cursostitulo{
         @include titulo-general;
         }
-    
-        /*CONTACTO*/
+/*CONTACTO*/
     .titulocontacto{
         @include titulo-general;
     }
@@ -25,5 +24,33 @@
         font-weight: lighter;
         font-style: initial;
     }
+/*CONTACTO*/
 
-    /*CONTACTO*/
+/*INDEX*/
+
+
+.titulo-nuestros-servicios{
+    @include titulo-general;
+}
+.titulo-testimonios{
+    @include titulo-general;
+}
+
+/*FOOTER*/
+
+.titulofooter{
+        text-align: start;
+        padding: 20px 0;
+        margin-left: 5%;
+        font-size: 40px;
+        color: grey;
+        font-family: "gaga2";
+        font-weight: lighter;
+        font-style: initial;
+}
+.tituloredes{
+        font-family: "gaga2";
+        text-align: end;
+        color: grey;
+        margin: 3%;
+}

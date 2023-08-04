@@ -3,36 +3,35 @@
 .about-us {
     padding: 40px 0;
     background-color: map-get($colors, texto-claro); 
-    margin-left: 5px;
-    h3 {
-    text-align: justify;
-    font-family: "gaga";
-    font-weight: bold;
-    color:black;   
-    }
-    p {
-    margin-bottom: 20px;
-    font-family: "gaga";
-    font-weight: bold;
-    color: black;
-    }
-    img {
-    max-width: 100%;
-    height: auto;
-    }
+            h3 {
+                text-align: justify;
+                font-family: "gaga";
+                font-weight: bold;
+                color:black;   
+        }
+            p {
+                margin-bottom: 20px;
+                font-family: "gaga";
+                font-weight: bold;
+                color: black;
+        }
+            img {
+                max-width: 100%;
+                height: auto;
+        }
     }
     .ab-hor{
-        padding-bottom: 60px;
-        margin-top: 60px;
-        h2{
-            text-align: center;
-            padding: 20px 0;
-            font-size: 60px;
-            color: map-get($colors, color-secundario);
-            font-family: "gaga2";
-            font-weight: lighter;
-            font-style: initial;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
+            margin-top: 60px;
+            h2{
+                text-align: center;
+                padding: 20px 0;
+                font-size: 60px;
+                color: map-get($colors, color-secundario);
+                font-family: "gaga2";
+                font-weight: lighter;
+                font-style: initial;
+                padding-bottom: 50px;
         }
     }
 
@@ -53,9 +52,6 @@
     }
 
     /*SERVICIOS*/
-    .titulo-nuestros-servicios{
-        @include titulo-general;
-    }
     .servicios{
         margin-top: 60px;
         font-family: "gaga";

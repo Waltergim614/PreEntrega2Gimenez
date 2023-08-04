@@ -1,94 +1,95 @@
     /*ESTILOS GALERIA*/
     
     .galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 10px;
-    width: 100%;
-    overflow: hidden;
-    padding: 16%;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    justify-content: center;
-    align-items: center;
-    img {
-        @include tamanios(450px, 100%);
-    max-width: 100%; 
-    max-height: 100%; 
-    vertical-align: top;
-    object-fit: cover;
-    transition: 0.5s;
-    }
-    }
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 10px;
+            width: 100%;
+            overflow: hidden;
+            padding: 16%;
+            padding-top: 2%;
+            padding-bottom: 5%;
+            justify-content: center;
+            align-items: center;
+            img {
+                @include tamanios(450px, 100%);
+                max-width: 100%; 
+                max-height: 100%; 
+                vertical-align: top;
+                object-fit: cover;
+                transition: 0.5s;
+        }
+}
     
     .galeria > a{
-    display: block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            display: block;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            &:hover img{
+                filter: blur(0.5px);
+                transform: rotate(20deg) scale(1.2);
     }
-    .galeria a:hover img{
-    filter: blur(0.5px);
-    transform: rotate(20deg) scale(1.2);
-    }
-    .efecto-light{
-        @include tamanios(100vh, 100%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(254, 221, 225, 0.5);
-    transition: transform .2s ease-in-out;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-    img{
-    width: 55vw;
-    max-height: 95vh;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    object-fit: cover;
 }
+    .efecto-light{
+                @include tamanios(100vh, 100%);
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(254, 221, 225, 0.5);
+                transition: transform .2s ease-in-out;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+                img{
+                    width: 55vw;
+                    max-height: 95vh;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                    object-fit: cover;
     }
-
-    .efecto-light:target{
+    &:target{
     transform: scale(1);
     }
+}
+
+    
     .cerrar {
-    display: block;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    transform: translateY(-50%); 
-    background: map-get($colors, texto-claro); 
-    background-position: center;
-    color: map-get($colors, color-primario);
-    text-decoration: none;
-    @include tamanios(80px, 80px);
-    text-align: center;
-    line-height: 85px; 
-    border-radius: 50%;
-    font-size: 70px;
-    font-family: "gaga";
-    font-weight: bolder;
-    box-shadow: 0 0 10px rgb(249, 201, 201);
+            display: block;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            transform: translateY(-50%); 
+            background: map-get($colors, texto-claro); 
+            background-position: center;
+            color: map-get($colors, color-primario);
+            text-decoration: none;
+            @include tamanios(80px, 80px);
+            text-align: center;
+            line-height: 85px; 
+            border-radius: 50%;
+            font-size: 70px;
+            font-family: "gaga";
+            font-weight: bolder;
+            box-shadow: 0 0 10px rgb(249, 201, 201);
     }
     .sig{
-    display: block;
-    background: map-get($colors, texto-claro); 
-    color:  map-get($colors, color-primario);
-    @include tamanios(90px, 90px);
-    text-decoration: none;
-    font-family: "gaga";
-    font-size: 80px;
-    margin: 40px;
-    text-align: center;
-    line-height: 90px; 
-    border-radius: 50%;
-    font-size: 80px;
-    transform: translateY(-50%); 
-    font-weight: bolder;
-    box-shadow: 0 0 10px rgb(247, 190, 190);
-    right: 10%;
+            display: block;
+            background: map-get($colors, texto-claro); 
+            color:  map-get($colors, color-primario);
+            @include tamanios(90px, 90px);
+            text-decoration: none;
+            font-family: "gaga";
+            font-size: 80px;
+            margin: 40px;
+            text-align: center;
+            line-height: 90px; 
+            border-radius: 50%;
+            font-size: 80px;
+            transform: translateY(-50%); 
+            font-weight: bolder;
+            box-shadow: 0 0 10px rgb(247, 190, 190);
+            right: 10%;
     }
     /*ESTILOS GALERIA*/

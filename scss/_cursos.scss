@@ -1,53 +1,42 @@
 
 /*ESTILOS CURSOS.HTML*/
 .navbar-nav {
-    font-family: "gaga";
-    font-size: auto;
-
-    a{
-        color: map-get($colors, texto-claro); 
-        text-decoration: none;
-        background-color: none;
-        padding: 0px;
-        margin: 5px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-        
+        font-family: "gaga";
+        font-size: auto;
+        a{
+            color: map-get($colors, texto-claro); 
+            text-decoration: none;
+            background-color: none;
+            padding: 0px;
+            margin: 5px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     }
-    
-    
 }
 .navcur {
-    font-family: "gaga";
-    font-size: 40px;
-    background-color: map-get($colors, color-primario);
-    width: auto;
-    align-items: center;
-    box-shadow: 0 0 6px rgb(236, 101, 153);
-    a{
-        color: map-get($colors, texto-claro); 
-        text-decoration: none;
+        font-family: "gaga";
+        font-size: 40px;
+        background-color: map-get($colors, color-primario);
         width: auto;
-        text-align: center;
-        
-        
+        align-items: center;
+        box-shadow: 0 0 6px rgb(236, 101, 153);
+        a{
+            color: map-get($colors, texto-claro); 
+            text-decoration: none;
+            width: auto;
+            text-align: center;
     }
-    
 }
 article {
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    
-    
-    .imgcurso{
-        img{
-            border: 2px solid #ddd;
-            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-            object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .imgcurso{
+                    img{
+                        border: 2px solid #ddd;
+                        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+                        object-fit: cover;
+                    }
         }
-    
-    }
-    
     .cursos{
         padding-bottom: 10%;
         padding-top: 10%;
@@ -58,22 +47,20 @@ article {
     
     }
     .infcurso {
-    display: flex;
-    border: 2px solid #ddd;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    height: 250px;
-    text-align: center;
-    background-image: url(../img/glitter3.jpg);
-    align-items: center;
-        
-        h3{
-        font-family: "gaga";
-        color: grey;
-        text-align: justify;
-        margin: 0px;
-        }
-
+        display: flex;
+        border: 2px solid #ddd;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        height: 250px;
+        text-align: center;
+        background-image: url(../img/glitter3.jpg);
+        align-items: center;
+                h3{
+                font-family: "gaga";
+                color: grey;
+                text-align: justify;
+                margin: 0px;
+                }
         }
 }
 

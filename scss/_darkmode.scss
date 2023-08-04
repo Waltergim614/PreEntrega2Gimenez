@@ -1,0 +1,19 @@
+/*MODO DARK*/
+body{
+    header{
+        &.dark{
+        background-color: map-get($colors, color-dark-primario);
+        }
+    }
+    main{
+    
+        &.dark{
+        background-color: black;
+        }
+    }
+    footer{
+        &.dark {
+        background-color: map-get($colors, color-dark-primario);
+        }
+    }
+}
